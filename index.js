@@ -19,7 +19,7 @@ module.exports = co.wrap(function* (options) {
   assert(template, 'Expected the path of template')
 
   const engine = options.engine || 'handlebars'
-  
+
   let parsed
   if (typeof input === 'object') {
     parsed = input
