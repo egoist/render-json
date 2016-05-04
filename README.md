@@ -1,4 +1,4 @@
-# render-json
+# render-json [![NPM version](https://img.shields.io/npm/v/render-json.svg)](https://npmjs.com/package/render-json) [![NPM downloads](https://img.shields.io/npm/dm/render-json.svg)](https://npmjs.com/package/render-json) [![Build Status](https://img.shields.io/circleci/project/egoist/render-json/master.svg)](https://circleci.com/gh/egoist/render-json) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 > Render JSON data into your template.
 
