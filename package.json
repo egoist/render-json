@@ -1,6 +1,6 @@
 {
   "name": "render-json",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Render JSON data into your template",
   "license": "MIT",
   "repository": "egoist/render-json",
