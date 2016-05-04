@@ -29,10 +29,12 @@ render(options)
 
 ```js
 {
-  json: {}, // parse input file
+  json: {}, // parsed input file
   year: 2016 // current year
 }
 ```
+
+Or the `input` itself if it's an `object`.
 
 ## API
 
