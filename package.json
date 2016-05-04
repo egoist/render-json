@@ -1,0 +1,38 @@
+{
+  "name": "render-json",
+  "version": "0.0.0",
+  "description": "Render JSON data into your template",
+  "license": "MIT",
+  "repository": "egoist/render-json",
+  "author": "EGOIST <0x142857@gmail.com>",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "rm -rf test/output.txt && xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "render",
+    "json"
+  ],
+  "devDependencies": {
+    "ava": "latest",
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "consolidate": "^0.14.1",
+    "handlebars": "^4.0.5",
+    "path-exists": "^3.0.0",
+    "pify": "^2.3.0",
+    "read-package-json": "^2.0.4"
+  }
+}
