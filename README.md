@@ -38,7 +38,7 @@ Or the `input` itself if it's an `object`.
 
 ## API
 
-### render(<options>)
+### render(options)
 
 #### options
 
