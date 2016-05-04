@@ -19,10 +19,15 @@ module.exports = co.wrap(function* (options) {
   assert(template, 'Expected the path of template')
 
   const engine = options.engine || 'handlebars'
-
-  const parsed = options.isPackageJson ?
-    yield pify(readJson)(input) :
-    JSON.parse(yield pify(fs.readFile)(input, 'utf8'))
+  
+  let parsed
+  if (typeof input === 'object') {
+    parsed = input
+  } else {
+    parsed = options.isPackageJson ?
+      yield pify(readJson)(input) :
+      JSON.parse(yield pify(fs.readFile)(input, 'utf8'))
+  }
   const data = {
     json: parsed,
     year: new Date().getFullYear()

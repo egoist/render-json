@@ -16,7 +16,7 @@ const render = require('render-json')
 const options = {
   input: 'package.json',
   output: 'README.md'
-  template: 'README_template.hbs' // handlebars sy
+  template: 'README_template.hbs' // handlebars syntax
 }
 
 render(options)
@@ -42,10 +42,11 @@ render(options)
 
 ##### input
 
-Type: `string`<br>
+Type: `string` `object`<br>
 Required: `true`
 
-Path to input file.
+- `string` Path to input file.
+- `object` Directly use given object to render template.
 
 ##### output
 
