@@ -14,7 +14,7 @@ $ npm install --save render-json
 const render = require('render-json')
 
 const options = {
-  input: 'package.json',
+  input: 'package.json', // or pass object directly
   output: 'README.md'
   template: 'README_template.hbs' // handlebars syntax
 }
